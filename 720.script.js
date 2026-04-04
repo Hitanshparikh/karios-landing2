@@ -83,7 +83,7 @@
                     let o = n(t);
                     for (; t !== r.SN.Desktop && void 0 === o;) t === r.SN.Mobile ? t = r.SN.Tablet : t === r.SN.Tablet && (t = r.SN.Desktop), o = n(t);
                     if (!o || "None" === o) return null;
-                    const i = yield u(`${a.lx.SceneState}/${o}.json`, "application/json");
+                    const i = yield u(`${a.lx.SceneState}/${o}.json`, "application/json", window._pwInitialPath || "/");
                     return yield i.json()
                 })),
                 f = e => l(void 0, void 0, void 0, (function*() {
@@ -107,11 +107,11 @@
                     return yield t.text()
                 })),
                 g = () => l(void 0, void 0, void 0, (function*() {
-                    const e = yield u(a.lx.ErrorPage, "text/html");
+                    const e = yield u(a.lx.ErrorPage, "text/html", window._pwInitialPath || "/");
                     return yield e.text()
                 })),
                 v = () => l(void 0, void 0, void 0, (function*() {
-                    const e = yield u(a.lx.ErrorPageStyles, "text/css");
+                    const e = yield u(a.lx.ErrorPageStyles, "text/css", window._pwInitialPath || "/");
                     return yield e.text()
                 })),
                 y = () => l(void 0, void 0, void 0, (function*() {
