@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+
+    <title>Karios</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="KAIROS is a living AI intelligence layer over your entire life, merging finance visualization, decision simulation, nutrition planning, and personal finance tracking for deep understanding." />
+    <meta property="og:title" content="Karios" />
+    <meta property="og:description" content="KAIROS is a living AI intelligence layer over your entire life, merging finance visualization, decision simulation, nutrition planning, and personal finance tracking for deep understanding." />
+    <meta property="og:image" content="/social.jpg" />
+    <meta property="og:url" content="https://undefined.kariosv14.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <link href="https://loving-4ampgprc.peachworlds.com/website-base.css" rel="stylesheet" />
+    <link href="https://loving-4ampgprc.peachworlds.com/styles.css" rel="stylesheet" />
+
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=sans-serif:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=DM Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
+
+    <script>
+        window._pwInitialPath = "/";
+    </script>
+    <script defer="defer" fetchpriority="high" src="https://loving-4ampgprc.peachworlds.com/script.js"></script>
+
+    <meta name="pw:has-visual-script" content="false" />
+    <link rel="preload" href="https://loving-4ampgprc.peachworlds.com/scene-state/fe9291a0-6767-48c3-b76d-46ff14f4f036.json" as="fetch" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/ded76229-97dd-41d6-ab94-8ac988db57c5/swrill-worm-v4-optimize.glb" as="fetch" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/629bb47a-8dc0-4097-b702-f29fd47e1131/vortex-donut-v4-optimize.glb" as="fetch" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/d62e5fd7-1460-47ee-bf21-7f31bab70411/frame-1707479732hdri.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/static/hdri/indoor/studio_small_08_2k.hdr" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/0d2bde43-7bda-418c-b791-12f08993c41a/gun-metal-30-04-roughness.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/static/hdri/indoor/studio_small_07_2k.hdr" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/788595a2-54b9-43d9-84ed-f5955d7011de/rocks08-diffuse.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/678e690d-ffc9-47c7-ac02-17c9b0c1ed9a/rocks08-normal-opengl.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/2a3d8201-bb65-42ce-afe2-968afeb28bc4/plastic15-glossiness.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/149b1125-f191-4f66-884c-78f15d8e6562/carbon-fibre-roughness.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/4f919f8b-77bf-42c6-86b0-f8630b26d7e9/carbon-fibre-normal.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/0df65832-7b40-4f5f-87bd-41647f576ae5/image-172.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/149eae22-7f39-4a2c-bd7f-99f77362d5ad/clay-rough-normal.png" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/ed17204d-c153-4812-b056-f2c7aca44cdb/clay-rough-roughness.png" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/static/hdri/indoor/small_empty_room_1_2k.hdr" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/6e546772-cdf7-4ff8-9a81-8f60364b3e5e/plastic15-normal-opengl.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/50be045b-c752-4be5-a217-4f6401108ffd/scratched-metal-26-35-glossiness.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/c1c13a58-d657-4711-8d24-df9750598c7a/surface-imperfection-seamless-tileable-shabby-texture-surface-imperfection-seamless-tileable-shabby-texture-can-be-used-as-223348118-1-.webp" as="image"
+        crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/0185cf7b-4f8a-4f23-b881-e5a65308b4e8/defaultmaterial-normal-1001.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/815f38a4-e579-4992-9550-b5b5b687880c/glass-frosted-001-normal.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/f3be2f7a-13a2-45f0-8a49-60c69f72a63b/sand02-basecolor.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/e074e2d4-478f-4a6d-94df-ea8e8d48a8af/sand02-normal.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://files.peachworlds.com/website/b9f09bc4-c9c4-4cfe-addd-e6d0863daf21/sand02-roughness.jpg" as="image" crossorigin="anonymous" />
+    <link rel="preload" href="https://loving-4ampgprc.peachworlds.com/ui-state.json" as="fetch" crossorigin="anonymous" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scrollbar-width: none
+        }
+
+        ::-webkit-scrollbar {
+            display: none
+        }
+
+        .pw-scene-style>canvas,
+        .pwb-scene>canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+            user-select: none
+        }
+
+        a,
+        abbr,
+        acronym,
+        address,
+        applet,
+        article,
+        aside,
+        audio,
+        b,
+        big,
+        blockquote,
+        body,
+        canvas,
+        caption,
+        center,
+        cite,
+        code,
+        dd,
+        del,
+        details,
+        dfn,
+        div,
+        dl,
+        dt,
+        em,
+        embed,
+        fieldset,
+        figcaption,
+        figure,
+        footer,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        header,
+        hgroup,
+        html,
+        i,
+        iframe,
+        img,
+        ins,
+        kbd,
+        label,
+        legend,
+        li,
+        mark,
+        menu,
+        nav,
+        object,
+        ol,
+        output,
+        p,
+        pre,
+        q,
+        ruby,
+        s,
+        samp,
+        section,
+        small,
+        span,
+        strike,
+        strong,
+        sub,
+        summary,
+        sup,
+        table,
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead,
+        time,
+        tr,
+        tt,
+        u,
+        ul,
+        var,
+        video {
+            margin: 0;
+            padding: 0;
+            border-width: 0;
+            border-style: initial;
+            border-color: initial;
+            border-image-source: initial;
+            border-image-slice: initial;
+            border-image-width: initial;
+            border-image-outset: initial;
+            border-image-repeat: initial;
+            font-variant-ligatures: inherit;
+            font-variant-caps: inherit;
+            font-variant-numeric: inherit;
+            font-variant-east-asian: inherit;
+            font-variant-alternates: inherit;
+            font-variant-position: inherit;
+            font-variant-emoji: inherit;
+            font-weight: inherit;
+            font-stretch: inherit;
+            font-size: inherit;
+            font-family: inherit;
+            font-optical-sizing: inherit;
+            font-size-adjust: inherit;
+            font-kerning: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-language-override: inherit;
+            vertical-align: baseline
+        }
+
+        a,
+        abbr,
+        acronym,
+        address,
+        applet,
+        article,
+        aside,
+        audio,
+        big,
+        blockquote,
+        canvas,
+        caption,
+        center,
+        cite,
+        code,
+        dd,
+        del,
+        details,
+        dfn,
+        div,
+        dl,
+        dt,
+        embed,
+        fieldset,
+        figcaption,
+        figure,
+        footer,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        header,
+        hgroup,
+        html,
+        iframe,
+        img,
+        ins,
+        kbd,
+        label,
+        legend,
+        li,
+        mark,
+        menu,
+        nav,
+        object,
+        ol,
+        output,
+        p,
+        pre,
+        q,
+        ruby,
+        s,
+        samp,
+        section,
+        small,
+        span,
+        strike,
+        sub,
+        summary,
+        sup,
+        table,
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead,
+        time,
+        tr,
+        tt,
+        u,
+        ul,
+        var,
+        video {
+            font-style: inherit;
+            line-height: inherit
+        }
+
+        b,
+        body,
+        em,
+        i,
+        strong {
+            line-height: 1
+        }
+
+        b,
+        em,
+        i,
+        strong {
+            line-height: inherit;
+            font-style: italic
+        }
+
+        b,
+        body,
+        strong {
+            font-style: inherit
+        }
+
+        b,
+        strong {
+            font-weight: bolder
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block
+        }
+
+        ol,
+        ul {
+            list-style-position: initial;
+            list-style-image: initial;
+            list-style-type: none
+        }
+
+        blockquote,
+        q {
+            quotes: none
+        }
+
+        blockquote::after,
+        blockquote::before,
+        q::after,
+        q::before {
+            content: none
+        }
+
+        table {
+            border-collapse: collapse;
+            -webkit-border-horizontal-spacing: 0;
+            -webkit-border-vertical-spacing: 0
+        }
+
+        :root {
+            --pw-user-color-style-6ce387c8-34d4-4438-91b3-ef15f7563451: #000000;
+            --pw-user-color-style-18aa8819-e702-4f28-b8e6-ca428ebfcae1: #ffffff0f;
+            --pw-user-color-style-530acd54-7ab7-4802-a2e6-537fc4327e1f: #ffffff;
+            --pw-user-color-style-0369eed5-f163-4453-8bd0-a79a5b9221fe: #0000004d;
+            --pw-user-color-style-5d5bbd6c-3d15-4617-9080-925229b574d0: #ffffff66;
+            --pw-user-color-style-31856edf-d870-43ac-a0a5-dc0365dd60ac: #ebe9e5;
+            --pw-user-color-style-46ffe95e-f531-4cae-9231-f44505279910: #000000;
+            --pw-user-color-style-cd560c70-5097-46bd-a08c-307edce4bb4e: #ffffff1a;
+            --pw-user-color-style-842da9d8-cb04-49f6-8552-411d814e9a65: #000000;
+            --pw-user-color-style-5a50d038-4e8c-4199-971a-20e5da394938: #ffffff;
+            --pw-user-color-style-a2d34486-9ce4-4655-b4d4-30b22f4b5e05: #ffffffb3;
+            --pw-user-color-style-58a27c95-4b10-481b-b47d-975b9f47ec10: #000000;
+            --pw-user-color-style-c5f0860a-42a5-4066-b0fc-8b742e0a8fe7: #ffffff;
+            --pw-user-color-style-ab46486e-d3d5-467b-b13f-af34b513c6d3: #1a1a1a;
+            --pw-user-color-style-0fa32ba8-dd03-4bce-909c-a4fe5287b588: #d9d9d9;
+            --pw-user-color-style-6d0a807c-a691-4251-9a6c-9a4350ed59c1: #ffffff;
+            --pw-user-color-style-7ec2d05b-f86e-4bad-8d3e-4e6e9869bbf5: #ffffff80;
+            --pw-user-color-style-4f1e7552-cb20-4e09-87b7-3cc334ee3fa5: #8e37ec;
+            --pw-user-color-style-2773325a-cf6b-47cd-bd62-4f32b6c6bf60: #737373;
+            --pw-user-color-style-82203707-5340-47a9-9b0a-59feaf95267d: #1dc84a;
+            --pw-user-color-style-063739f6-f8ed-4bd7-bd49-68a093e0c53e: #cacaca;
+            --pw-user-color-style-231faa23-ee9e-441a-8672-b81bc47ea165: #8101b659;
+            --pw-user-color-style-742eb09d-c71e-466c-95fb-e74185300416: #65e5b2
+        }
+
+        #pwb-loading-wrap {
+            background-color: #0e0e0e
+        }
+
+        .pw-image-style {
+            width: 100px;
+            height: 100px
+        }
+
+        #ikaa5d {
+            width: 993px;
+            height: 786px;
+            background-color: #75a5ec;
+            position: static;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0
+        }
+    </style>
+</head>
+
+<body id="i6mb">
+
+
+
+    <div id="pwb-body-wrap">
+        <div class="pwb-background pwb-flex-grid-wrap" id="ip1j">
+            <div class="pwb-scene" id="ijsk"></div>
+        </div>
+        <div class="pwb-flex-grid-wrap" id="ihkww7">
+            <div class="pw-block-style" id="int5ct">
+                <div class="pwb-flex-grid-wrap" id="i1lwz-3">
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-3">
+                        <div id="ispyh-2-3-2-3-3-2">KARIOS</div>
+                    </div>
+                    <div class="framer-1cc0f02" id="imob0j-3-3-2">
+                        <div class="pwb-flex-grid-wrap" id="i1lwz-2-3-3-2">
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-3-2-2-2">Platform</p>
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-3-2-2-2-2">Concepts</p>
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-3-2-2-2-2-2">Benefits</p>
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-3-2-2-2-2-2-2">Pricing    </p>
+                        </div>
+                        <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-6-2">
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-7-2">Get KARIOS</p><img class="pw-image-style" src="https://files.peachworlds.com/website/22029aaa-3381-4c76-8bf3-976ac4e99914/arrow-r.svg" loading="lazy" id="i9hq34-3-2" /></div>
+                    </div>
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-3-4">
+                        <div class="pw-block-style" id="ilouwl"></div>
+                        <div class="pw-block-style" id="ilouwl-2"></div>
+                    </div>
+                    <div class="pwb-relative-overlay" id="iy2h61">
+                        <div class="pwb-flex-grid-wrap" id="i1lwz-3-2">
+                            <div class="pwb-flex-grid-wrap" id="i1lwz-2-3-2">
+                                <div id="ispyh-2-3-2-3-3-2-2">KAIROS</div>
+                            </div>
+                            <div class="pwb-flex-grid-wrap" id="i1lwz-2-3-4-2"><img src="https://files.peachworlds.com/website/88a3c23d-92ab-4bee-a406-38c6d9bdf2a2/close-24dp-000000-fill0-wght400-grad0-opsz24.png" loading="lazy" id="iet44-4-2" /></div>
+                        </div>
+                        <div class="pwb-flex-grid-wrap" id="i1lwz-2-3-3">
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-3-2-2-2-4">Platform</p>
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-3-2-2-2-2-3">Concepts</p>
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-3-2-2-2-2-2-3">Benefits</p>
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-3-2-2-2-2-2-2-2">Pricing</p>
+                            <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-2-2-2-3">
+                                <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-2-2-2-3">Get KAIROS</p><img class="pw-image-style" src="https://files.peachworlds.com/website/891f2b7b-7938-4621-8e01-2c998deb43f8/arow-white.svg" loading="lazy" id="i9hq34-2-2-3-2-2-2-3" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pwb-anchor" id="i3owk"></div>
+        <div class="pwb-flex-grid-wrap" id="i84ba">
+            <div class="pwb-flex-grid-wrap" id="i1lwz">
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2">
+                    <h1 class="pw-user-text-style-6ae56f11-b178-4dd1-8bf0-1f16cb6f2a2e" id="ispyh-2-2">Experience AI with complete life context<br id="i6b3wh" /></h1>
+                    <div class="pw-block-style" id="i81y03-2">
+                        <p class="pw-user-text-style-3045d4e5-cceb-462e-a2d3-aff6a744df83" id="ispyh-2-3-4">Trusted by individuals seeking clarity</p>
+                        <div class="pw-block-style" id="izwg2d"></div>
+                    </div>
+                </div>
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-2">
+                    <p class="pw-user-text-style-3045d4e5-cceb-462e-a2d3-aff6a744df83" id="ispyh-2-3">KARIOS is not an app, but a living AI intelligence layer over your entire life, meant to efficiently replace journaling and cash book.</p>
+                    <div class="pw-block-style" id="i81y03">
+                        <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-2-2-2-4">
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-2-2-2-4">Get KARIOS</p><img class="pw-image-style" src="https://files.peachworlds.com/website/891f2b7b-7938-4621-8e01-2c998deb43f8/arow-white.svg" loading="lazy" id="i9hq34-2-2-3-2-2-2-4" /></div>
+                        <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-5">
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-6">Learn More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pwb-flex-grid-wrap" id="ilwyn">
+            <div class="pwb-flex-grid-wrap" id="i1lwz-2-4">
+                <div class="pw-block-style" id="ipgqtg">
+                    <div class="pw-block-style" id="iklwi7">
+                        <div class="pw-block-style" id="iyg80u">
+                            <h4 class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3">PLATFORM</h4>
+                            <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2">Unifying your life's data.</h1>
+                            <div class="pw-block-style" id="i81y03-3">
+                                <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-6">
+                                    <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-7">Get KARIOS</p><img class="pw-image-style" src="https://files.peachworlds.com/website/22029aaa-3381-4c76-8bf3-976ac4e99914/arrow-r.svg" loading="lazy" id="i9hq34-3" /></div>
+                                <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-5-2">
+                                    <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-6-2">Watch Demo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pw-block-style" id="iyg80u-2">
+                            <p class="pw-user-text-style-3045d4e5-cceb-462e-a2d3-aff6a744df83" id="ispyh-2-3-5">KARIOS merges four powerful product concepts: Mirror-Finance, VETO, VitalMeal, and Mind, providing understanding beyond mere data.</p>
+                        </div>
+                    </div>
+                    <div class="pw-block-style" id="ijuu9f"><img class="pw-image-style" src="https://files.peachworlds.com/website/75e3d600-f117-4678-9d86-f6553143c098/screenshot-2026-04-02-212120.png" loading="lazy" id="i0esdr" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="pwb-anchor" id="i3owk-2-3"></div>
+        <div class="pwb-flex-grid-wrap" id="ilwyn-2-2">
+            <div class="pwb-flex-grid-wrap" id="i1lwz-5-2">
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-6-2">
+                    <h4 class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2">CONCEPTS</h4>
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-6-2-6">
+                        <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-3-2-6">The future of personal intelligence is here.</h1>
+                        <p class="pw-user-text-style-3045d4e5-cceb-462e-a2d3-aff6a744df83" id="ispyh-2-3-5-2-4">KARIOS integrates advanced AI to transform data into actionable understanding, adapting to your unique life.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-3">
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3">
+                    <div class="pw-block-style" id="ipkvji-4-4"><img class="pw-image-style" src="https://files.peachworlds.com/website/8c259d0f-3c19-4ac4-b965-090c7f7b9427/frame-1707479758-1.jpg" loading="lazy" id="iry0if-3" /></div>
+                    <div class="pw-block-style" id="ipkvji-4-3">
+                        <h3 class="pw-user-text-style-68210bff-519a-4c4d-8aa2-b3b5be3cb987" id="ispyh-2-2-2-2-2-2-3">Mirror-Finance</h3>
+                        <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-4-4-2"><strong data-start="1351" data-end="1388" id="iktx5n">See your money. Feel your future.</strong><br data-start="1388" data-end="1391" id="imcv6k" /> Track everything. Visualize consequences. Turn invisible financial habits into
+                            something you can actually feel and fix.</p>
+                    </div>
+                </div>
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-2">
+                    <div class="pw-block-style" id="ipkvji-4-2-4"><img class="pw-image-style" src="https://files.peachworlds.com/website/7c8b68fe-8144-4458-afc2-3161f760b3cd/frame-1707479758-2.jpg" loading="lazy" id="idghoz-3" /></div>
+                    <div class="pw-block-style" id="ipkvji-4-3-2">
+                        <h3 class="pw-user-text-style-68210bff-519a-4c4d-8aa2-b3b5be3cb987" id="ispyh-2-2-2-2-2-2-3-2">VETO</h3>
+                        <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-4-4-2-2"><strong data-start="1535" data-end="1574" id="igj18g">One decision. Ten thousand futures.</strong><br data-start="1574" data-end="1577" id="i1pn9l" /> Simulate your choices before you make them. KARIOS eliminates regret by showing
+                            you what actually happens next.</p>
+                    </div>
+                </div>
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-2-2">
+                    <div class="pw-block-style" id="ipkvji-4-2-2-2"><img class="pw-image-style" src="https://files.peachworlds.com/website/56468354-47fb-45fb-b423-28a48204db6b/frame-1707479758.jpg" loading="lazy" id="icg3p7-3" /></div>
+                    <div class="pw-block-style" id="ipkvji-4-3-2-2">
+                        <h3 class="pw-user-text-style-68210bff-519a-4c4d-8aa2-b3b5be3cb987" id="ispyh-2-2-2-2-2-2-3-2-2">VitalMeal</h3>
+                        <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-4-4-2-2-2">
+                            <p data-start="1718" data-end="1863" id="i7ruj3"><strong data-start="1718" data-end="1770" id="i32yxh">Your body has been speaking. Now you can listen.</strong><br data-start="1770" data-end="1773" id="iwagvh" /> Biomarker-driven meals that adapt daily to your energy, stress,
+                                and real biological needs.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pwb-flex-grid-wrap" id="ilwyn-2-2-3">
+            <div class="pwb-flex-grid-wrap" id="i1lwz-5-2-3">
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-6-2-3">
+                    <h4 class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2-4">ABOUT KARIOS</h4>
+                    <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-3-2-3">Key Concepts</h1>
+                </div>
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-3-3">
+                    <p class="pw-user-text-style-3045d4e5-cceb-462e-a2d3-aff6a744df83" id="ispyh-2-3-5-2-2">KARIOS learns, adapts, and becomes irreplaceable, like a chief of staff for your personal life.</p>
+                </div>
+            </div>
+            <div class="pwb-flex-grid-wrap" id="i1lwz-5-2-3-3">
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-3-3-3">
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-4-3">
+                        <div class="pw-block-style" id="iktmiu">
+                            <div class="pw-block-style" id="ipkvji-4-5-3">
+                                <h4 class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2-4-3">MIRROR-FINANCE</h4>
+                                <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-2-2-2-3-4-3">Visualize financial consequences.</h1>
+                            </div>
+                            <div class="pw-block-style" id="ipkvji-4-3-4-3">
+                                <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-4-4-2-4-3">
+                                    <p data-pm-slice="1 1 []" id="iftlct">Track every transaction across all your accounts in one place</p>
+                                    <p id="iasry6">Visualize your financial health as a living, evolving system</p>
+                                    <p id="iltaia">Understand where your money goes and what it costs you over time</p>
+                                    <p id="izi1kh">Detect patterns, overspending habits, and hidden leaks automatically</p>
+                                </p>
+                            </div>
+                            <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-2-2-2-6">
+                                <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-2-2-2-6">Learn More</p><img class="pw-image-style" src="https://files.peachworlds.com/website/891f2b7b-7938-4621-8e01-2c998deb43f8/arow-white.svg" loading="lazy" id="i9hq34-2-2-3-2-2-2-6" /></div>
+                        </div>
+                        <div class="pw-block-style" id="iktmiu-2-3">
+                            <div class="pw-block-style" id="ipkvji-4-5-3-2-3">
+                                <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-2-2-2-5-2-2-3">01</p>
+                            </div><img class="pw-image-style" src="https://files.peachworlds.com/website/70b83492-b6f6-43c1-9cbc-def42fc9bff0/chatgpt-image-apr-2-2026-10-23-57-pm.png" loading="lazy" id="icg3p7-2-3" /></div>
+                        <div class="pw-block-style" id="iktmiu-4">
+                            <div class="pw-block-style" id="ipkvji-4-5-3-5">
+                                <h4 class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2-4-3-4">VETO</h4>
+                                <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-2-2-2-3-4-3-4">Simulate life decisions with AI.</h1>
+                            </div>
+                            <div class="pw-block-style" id="ipkvji-4-3-4-3-4">
+                                <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-4-4-2-4-3-4">Our AI-powered life decision simulation engine helps you explore outcomes before you commit, guiding smarter choices.<br id="i91bg2-3-4" /></p>
+                            </div>
+                            <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-2-2-2-6-5">
+                                <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-2-2-2-6-5">Learn More</p><img class="pw-image-style" src="https://files.peachworlds.com/website/891f2b7b-7938-4621-8e01-2c998deb43f8/arow-white.svg" loading="lazy" id="i9hq34-2-2-3-2-2-2-6-5" /></div>
+                        </div>
+                    </div>
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-4-3-2">
+                        <div class="pw-block-style" id="iktmiu-2-2-3">
+                            <div class="pw-block-style" id="ipkvji-4-5-3-2-2-3">
+                                <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-2-2-2-5-2-2-2-3">02</p>
+                            </div><img class="pw-image-style" src="https://files.peachworlds.com/website/d8725070-ea41-428d-bd30-ff9285951968/chatgpt-image-apr-2-2026-10-38-24-pm.png" loading="lazy" id="icg3p7-2-2-3" /></div>
+                        <div class="pw-block-style" id="iktmiu-3">
+                            <div class="pw-block-style" id="ipkvji-4-5-3-3">
+                                <h4 class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2-4-3-2">VETO</h4>
+                                <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-2-2-2-3-4-3-2">Simulate decisions before you live them.</h1>
+                            </div>
+                            <div class="pw-block-style" id="ipkvji-4-3-4-3-2">
+                                <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-4-4-2-4-3-2">
+                                    <p data-pm-slice="1 1 []" id="imbtzv">Input any decision: purchases, career moves, subscriptions</p>
+                                    <p id="iph41d">Run thousands of simulated life outcomes instantly. Risk evaluation and recovery analysis.</p>
+                                </p>
+                            </div>
+                            <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-2-2-2-6-2">
+                                <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-2-2-2-6-2">Learn More</p><img class="pw-image-style" src="https://files.peachworlds.com/website/891f2b7b-7938-4621-8e01-2c998deb43f8/arow-white.svg" loading="lazy" id="i9hq34-2-2-3-2-2-2-6-2" /></div>
+                        </div>
+                    </div>
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-4-3-2-2">
+                        <div class="pw-block-style" id="iktmiu-3-2">
+                            <div class="pw-block-style" id="ipkvji-4-5-3-3-2">
+                                <h4 class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2-4-3-2-2">
+                                    <h4 class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f gjs-selected" id="ispyh-2-3-2-3-2-2-2-3-2-2-4-3-2-3" draggable="false">VITALMEAL</h4>
+                                </h4>
+                                <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-2-2-2-3-4-3-2-2">
+                                    <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e gjs-selected" id="ispyh-2-2-2-2-2-2-3-4-3-2-3" draggable="false">Adaptive nutrition planning.</h1>
+                                </h1>
+                            </div>
+                            <div class="pw-block-style" id="ipkvji-4-3-4-3-2-2">
+                                <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-4-4-2-4-3-2-2">
+                                    <p data-pm-slice="1 1 []" id="ix19fw">Upload blood reports and extract real biomarker insights</p>
+                                    <p id="isdcua">Generate personalized, adaptive meal plans</p>
+                                    <p id="idr383">Adjust meals daily based on energy, stress, and symptoms</p>
+                                    <p id="imwuwf">Balance nutrition with your budget and lifestyle</p>
+                                </p>
+                            </div>
+                            <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-2-2-2-6-3">
+                                <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-2-2-2-6-3">Learn More</p><img class="pw-image-style" src="https://files.peachworlds.com/website/891f2b7b-7938-4621-8e01-2c998deb43f8/arow-white.svg" loading="lazy" id="i9hq34-2-2-3-2-2-2-6-3" /></div>
+                        </div>
+                        <div class="pw-block-style" id="iktmiu-2-2-2-3">
+                            <div class="pw-block-style" id="ipkvji-4-5-3-2-2-2-3">
+                                <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-2-2-2-5-2-2-2-2-3">03</p>
+                            </div><img class="pw-image-style" src="https://files.peachworlds.com/website/c2716165-12e2-40fc-8b48-82d83fc8d4ba/chatgpt-image-apr-2-2026-10-56-08-pm.png" loading="lazy" id="icg3p7-2-2-2-3" /></div>
+                        <div class="pw-block-style" id="iktmiu-3-2-2">
+                            <div class="pw-block-style" id="ipkvji-4-5-3-3-2-3">
+                                <h4 class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2-4-3-2-2-3">UNDERSTANDING</h4>
+                                <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-2-2-2-3-4-3-2-2-3">Beyond just data.</h1>
+                            </div>
+                            <div class="pw-block-style" id="ipkvji-4-3-4-3-2-2-3">
+                                <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-4-4-2-4-3-2-2-3">KAIROS knows your bank balance, blood biomarkers, sleep quality, and goals, cross-referencing everything for tailored advice.<br id="i91bg2-3-2-2-3" /></p>
+                            </div>
+                            <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-2-2-2-6-3-3">
+                                <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-2-2-2-6-3-3">Learn More</p><img class="pw-image-style" src="https://files.peachworlds.com/website/891f2b7b-7938-4621-8e01-2c998deb43f8/arow-white.svg" loading="lazy" id="i9hq34-2-2-3-2-2-2-6-3-3" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pwb-anchor" id="i3owk-2-2-3-2"></div>
+        <div class="pwb-flex-grid-wrap" id="ilwyn-2-2-4">
+            <div class="pw-block-style" id="ifyx0h">
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-6-2-4">
+                    <h4 class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2-2">BENEFITS</h4>
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-6-2-4-2">
+                        <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-3-2-4-2">Designed for a richer, informed life.</h1>
+                        <p class="pw-user-text-style-3045d4e5-cceb-462e-a2d3-aff6a744df83" id="ispyh-2-3-5-2-3-2">KARIOS provides understanding, not just data. It learns, adapts, and becomes irreplaceable in your personal life.</p>
+                    </div>
+                </div>
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-3-4">
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-4">
+                        <div class="pw-block-style" id="ipkvji-4-5"><img class="pw-image-style" src="https://files.peachworlds.com/website/9968f165-85ad-4908-ae7f-fe132057de8b/saas-vector-1-1.png" loading="lazy" id="iry0if-2" /></div>
+                        <div class="pw-block-style" id="ipkvji-4-3-4">
+                            <h2 class="pw-user-text-style-abab9931-4159-4d9f-b594-3693bb5f6ccd" id="ispyh-2-2-2-2-2-2-3-4">Deep Understanding</h2>
+                            <p class="pw-user-text-style-3045d4e5-cceb-462e-a2d3-aff6a744df83" id="ispyh-2-2-2-4-4-2-4">KARIOS gives you understanding by knowing your bank balance, blood biomarkers, sleep quality, and spending impulses. </p>
+                        </div>
+                    </div>
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-2-3">
+                        <div class="pw-block-style" id="ipkvji-4-2-3"><img class="pw-image-style" src="https://files.peachworlds.com/website/b1209da2-1630-423b-bf7d-b54774c1d1d8/group.png" loading="lazy" id="idghoz-2" /></div>
+                        <div class="pw-block-style" id="ipkvji-4-3-2-3">
+                            <h2 class="pw-user-text-style-abab9931-4159-4d9f-b594-3693bb5f6ccd" id="ispyh-2-2-2-2-2-2-3-2-3">Personalized Recommendations</h2>
+                            <p class="pw-user-text-style-3045d4e5-cceb-462e-a2d3-aff6a744df83" id="ispyh-2-2-2-4-4-2-2-3">Every recommendation is cross-referenced against everything it knows about you, ensuring relevance and accuracy. </p>
+                        </div>
+                    </div>
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-4-5">
+                        <div class="pw-block-style" id="ipkvji-4-5-5"></div>
+                        <div class="pw-block-style" id="ipkvji-4-3-4-5">
+                            <h2 class="pw-user-text-style-abab9931-4159-4d9f-b594-3693bb5f6ccd" id="ispyh-2-2-2-2-2-2-3-4-5">Adaptive Intelligence<br id="ib3efv" />Layer</h2>
+                            <p class="pw-user-text-style-3045d4e5-cceb-462e-a2d3-aff6a744df83" id="ispyh-2-2-2-4-4-2-4-5">Over time, KARIOS learns, adapts, and becomes irreplaceable, like a chief of staff for your personal life. </p>
+                        </div>
+                    </div>
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-2-3-3">
+                        <div class="pw-block-style" id="ipkvji-4-2-3-3"><img class="pw-image-style" src="https://files.peachworlds.com/website/321a83be-f371-476e-95cf-d3e76ebf7fd7/frame.png" loading="lazy" id="idghoz-2-3" /></div>
+                        <div class="pw-block-style" id="ipkvji-4-3-2-3-3">
+                            <h2 class="pw-user-text-style-abab9931-4159-4d9f-b594-3693bb5f6ccd" id="ispyh-2-2-2-2-2-2-3-2-3-3">Holistic Life Management</h2>
+                            <p class="pw-user-text-style-3045d4e5-cceb-462e-a2d3-aff6a744df83" id="ispyh-2-2-2-4-4-2-2-3-3">It merges four powerful product concepts into one platform, covering finance, decisions, nutrition, and tracking. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pwb-flex-grid-wrap" id="ilwyn-2-2-3-2">
+            <div class="pwb-flex-grid-wrap" id="i1lwz-5-2-3-2">
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-6-2-3-2">
+                    <h4 class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2-4-2">IMPACT</h4>
+                    <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-3-2-3-2">Clarity. Growth. Empowerment.<br id="i62czt" />Welcome to KARIOS.</h1>
+                </div>
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-3-3-2">
+                    <div class="pw-block-style" id="iryxrh">
+                        <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-4-2-3">
+                            <div class="pw-block-style" id="ipkvji-4-5-2-3">
+                                <h1 class="pw-user-text-style-6ae56f11-b178-4dd1-8bf0-1f16cb6f2a2e" id="ispyh-2-2-2-2-2-2-3-4-2-3">+48%</h1>
+                            </div>
+                            <div class="pw-block-style" id="ipkvji-4-3-4-2-3">
+                                <h4 class="pw-user-text-style-bdff28c9-02fe-4067-b8c1-3aa144c1200c" id="ispyh-2-2-2-4-4-2-4-2-3">Better Decisions<br id="i91bg2-2-3" /></h4>
+                            </div>
+                        </div>
+                        <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-4-2-2">
+                            <div class="pw-block-style" id="ipkvji-4-5-2-2">
+                                <h1 class="pw-user-text-style-6ae56f11-b178-4dd1-8bf0-1f16cb6f2a2e" id="ispyh-2-2-2-2-2-2-3-4-2-2">-21%</h1>
+                            </div>
+                            <div class="pw-block-style" id="ipkvji-4-3-4-2-2">
+                                <h4 class="pw-user-text-style-bdff28c9-02fe-4067-b8c1-3aa144c1200c" id="ispyh-2-2-2-4-4-2-4-2-2">Financial Stress<br id="i91bg2-2-2" /></h4>
+                            </div>
+                        </div>
+                        <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-4-2">
+                            <div class="pw-block-style" id="ipkvji-4-5-2">
+                                <h1 class="pw-user-text-style-6ae56f11-b178-4dd1-8bf0-1f16cb6f2a2e" id="ispyh-2-2-2-2-2-2-3-4-2">10K+</h1>
+                            </div>
+                            <div class="pw-block-style" id="ipkvji-4-3-4-2">
+                                <h4 class="pw-user-text-style-bdff28c9-02fe-4067-b8c1-3aa144c1200c" id="ispyh-2-2-2-4-4-2-4-2">Empowered Lives<br id="i91bg2-2" /></h4>
+                            </div>
+                        </div>
+                        <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-4-2-2-2">
+                            <div class="pw-block-style" id="ipkvji-4-5-2-2-2">
+                                <h1 class="pw-user-text-style-6ae56f11-b178-4dd1-8bf0-1f16cb6f2a2e" id="ispyh-2-2-2-2-2-2-3-4-2-2-2">21+</h1>
+                            </div>
+                            <div class="pw-block-style" id="ipkvji-4-3-4-2-2-2">
+                                <h4 class="pw-user-text-style-bdff28c9-02fe-4067-b8c1-3aa144c1200c" id="ispyh-2-2-2-4-4-2-4-2-2-2">Integrated features</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pwb-anchor" id="i3owk-2-2-3"></div>
+        <div class="pwb-flex-grid-wrap" id="ilwyn-2-2-2">
+            <div class="pwb-flex-grid-wrap" id="i1lwz-5-2-2">
+                <div class="pwb-flex-grid-wrap" id="i1lwz-5-2-2-3-2-2">
+                    <p class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2-3-4-2-2">TESTIMONIALS</p>
+                    <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-3-2-2-2-3-2">What users say.</h1>
+                </div>
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-3-2-2-2-2-2">
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-3-3-2-3">
+                        <div class="pw-block-style" id="ipkvji-4-4-2-3-2-2-3-3">
+                            <div class="pw-block-style" id="ipkvji-4-4-2-3-2-2-2-3-3"><img class="pw-image-style" src="https://files.peachworlds.com/website/595fd760-2e78-4921-b207-e7a5d709d498/images.jpg" loading="lazy" id="im5p0b-2" /></div>
+                            <div class="pw-block-style" id="ipkvji-4-4-2-3-2-2-2-2-2-3">
+                                <h4 class="pw-user-text-style-bdff28c9-02fe-4067-b8c1-3aa144c1200c" id="ispyh-2-2-2-2-2-2-3-3-2-3-2-2-2-2-2-3">Kushal Desai</h4>
+                                <p class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2-3-2-2-3-2-2-2-2-2-3">Blockchain expert</p>
+                            </div>
+                        </div>
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-4-2">
+                            <h4 class="pw-user-text-style-bdff28c9-02fe-4067-b8c1-3aa144c1200c" id="ispyh-2-2-2-4-4-2-3-3-2-3-2">“KARIOS transformed how I approach my finances and daily choices. It's truly a chief of staff for my personal life.” </h4>
+                        </div>
+                    </div>
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-3-3-2-2-3">
+                        <div class="pw-block-style" id="ipkvji-4-4-2-3-2-2-3-2-3">
+                            <div class="pw-block-style" id="ipkvji-4-4-2-3-2-2-2-3-2-3"><img class="pw-image-style" src="https://files.peachworlds.com/website/595fd760-2e78-4921-b207-e7a5d709d498/images.jpg" loading="lazy" id="imo5gs-2" /></div>
+                            <div class="pw-block-style" id="ipkvji-4-4-2-3-2-2-2-2-2-2-3">
+                                <h4 class="pw-user-text-style-bdff28c9-02fe-4067-b8c1-3aa144c1200c" id="ispyh-2-2-2-2-2-2-3-3-2-3-2-2-2-2-2-2-3">Henisha Vyas</h4>
+                                <p class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2-3-2-2-3-2-2-2-2-2-2-3"> Oceanlabs Anchor</p>
+                            </div>
+                        </div>
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2-4-2">
+                            <h4 class="pw-user-text-style-bdff28c9-02fe-4067-b8c1-3aa144c1200c" id="ispyh-2-2-2-4-4-2-3-3-2-2-2-3">“The VitalMeal planner is revolutionary. My nutrition is now perfectly aligned with my biomarkers, thanks to KARIOS.” </h4>
+                        </div>
+                    </div>
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-3-3-2-2-2-2">
+                        <div class="pw-block-style" id="ipkvji-4-4-2-3-2-2-3-2-2-2">
+                            <div class="pw-block-style" id="ipkvji-4-4-2-3-2-2-2-3-2-2-2"><img class="pw-image-style" src="https://files.peachworlds.com/website/595fd760-2e78-4921-b207-e7a5d709d498/images.jpg" loading="lazy" id="idvtwj-2" /></div>
+                            <div class="pw-block-style" id="ipkvji-4-4-2-3-2-2-2-2-2-2-2-2">
+                                <h4 class="pw-user-text-style-bdff28c9-02fe-4067-b8c1-3aa144c1200c" id="ispyh-2-2-2-2-2-2-3-3-2-3-2-2-2-2-2-2-2-2">Sarah Kamdar</h4>
+                                <p class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2-3-2-2-3-2-2-2-2-2-2-2-2"> student</p>
+                            </div>
+                        </div>
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2-2-4-2">
+                            <h4 class="pw-user-text-style-bdff28c9-02fe-4067-b8c1-3aa144c1200c" id="ispyh-2-2-2-4-4-2-3-3-2-2-2-2-2">“Mirror-Finance provides insights I never thought possible. KARIOS is an invaluable tool for understanding complex outcomes.” </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pwb-flex-grid-wrap" id="ilwyn-2-2-2-3">
+            <div class="pwb-flex-grid-wrap" id="i1lwz-5-2-2-3">
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-6-2-2-3">
+                    <h4 class="pw-user-text-style-47248e95-3515-4423-8189-0bbe15d8728f" id="ispyh-2-3-2-3-2-2-2-3-2-2-3-4">PRICING</h4>
+                    <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-3-2-2-2">Pricing for a life of insight.</h1>
+                </div>
+            </div>
+            <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-3-2-2">
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-3-3">
+                    <div class="pw-block-style" id="ipkvji-4-4-3">
+                        <h3 class="pw-user-text-style-68210bff-519a-4c4d-8aa2-b3b5be3cb987" id="ispyh-2-2-2-2-2-2-3-3-3">Free</h3>
+                        <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-4-4-2-4-2-3-2">Perfect for individuals beginning their journey with Karios AI.<br id="i91bg2-2-3-2" /></p>
+                    </div>
+                    <div class="pw-block-style" id="il5oxh"></div>
+                    <div class="pw-block-style" id="ipkvji-4-3-3-3">
+                        <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-4-4-2-3-3">300 Credits • Free</h1>
+                    </div>
+                    <div class="pw-block-style" id="ipkvji-4-3-3-3-2">
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2"><img class="pw-image-style" src="https://files.peachworlds.com/website/b6ce1a4e-417e-4865-af33-3c85385cb682/volume-base-blk.svg" loading="lazy" id="irsa5v-3-2" />
+                            <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec"
+                                id="ispyh-2-2-2-3-2-2-2-2">Access all AI core </p>
+                        </div>
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2-2"><img class="pw-image-style" src="https://files.peachworlds.com/website/b6ce1a4e-417e-4865-af33-3c85385cb682/volume-base-blk.svg" loading="lazy" id="irsa5v-3-3" />
+                            <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec"
+                                id="ispyh-2-2-2-3-2-2-2-2-2">Mirror-Finance access</p>
+                        </div>
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2-2-2"><img class="pw-image-style" src="https://files.peachworlds.com/website/b6ce1a4e-417e-4865-af33-3c85385cb682/volume-base-blk.svg" loading="lazy" id="irsa5v-3-4" />
+                            <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec"
+                                id="ispyh-2-2-2-3-2-2-2-2-2-2">Basic VETO simulation</p>
+                        </div>
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2-2-2-2"><img class="pw-image-style" src="https://files.peachworlds.com/website/b6ce1a4e-417e-4865-af33-3c85385cb682/volume-base-blk.svg" loading="lazy" id="irsa5v-3-5" />
+                            <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec"
+                                id="ispyh-2-2-2-3-2-2-2-2-2-2-2">Meal planning for the month</p>
+                        </div>
+                    </div>
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-2-2">
+                        <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-2-2">Get KARIOS</p><img class="pw-image-style" src="https://files.peachworlds.com/website/891f2b7b-7938-4621-8e01-2c998deb43f8/arow-white.svg" loading="lazy" id="i9hq34-2-2-3-2-2" /></div>
+                </div>
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-3-2-3">
+                    <div class="pw-block-style" id="ipkvji-4-4-2-3">
+                        <h3 class="pw-user-text-style-68210bff-519a-4c4d-8aa2-b3b5be3cb987" id="ispyh-2-2-2-2-2-2-3-3-2-3">Pro</h3>
+                        <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-4-4-2-4-2-3-2-2">Ideal for those seeking deeper insights and comprehensive features.<br id="i91bg2-2-3-2-2" /></p>
+                    </div>
+                    <div class="pw-block-style" id="il5oxh-2"></div>
+                    <div class="pw-block-style" id="ipkvji-4-3-3-2-3">
+                        <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-4-4-2-3-3-2">
+                            <p data-start="674" data-end="702" id="if61jv"><strong data-start="674" data-end="702" id="iri0pg">Monthly Credits • </strong></p>
+                            <p id="i7896c" draggable="true" data-start="674" data-end="702"><strong draggable="true" data-start="674" data-end="702" id="ibpph7">Rs.299/mo</strong></p>
+                            <h3 data-section-id="3wt72x" data-start="704" data-end="718" id="imlomj"></h3>
+                        </h1>
+                    </div>
+                    <div class="pw-block-style" id="ipkvji-4-3-3-3-2-3">
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2-3"><img class="pw-image-style" src="https://files.peachworlds.com/website/b6ce1a4e-417e-4865-af33-3c85385cb682/volume-base-blk.svg" loading="lazy" id="irsa5v-3" />
+                            <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec"
+                                id="ispyh-2-2-2-3-2-2-2-2-3">Enhanced AI layer</p>
+                        </div>
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2-2-3"><img class="pw-image-style" src="https://files.peachworlds.com/website/b6ce1a4e-417e-4865-af33-3c85385cb682/volume-base-blk.svg" loading="lazy" id="irsa5v-3-10" />
+                            <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec"
+                                id="ispyh-2-2-2-3-2-2-2-2-2-3">Full Mirror-Finance</p>
+                        </div>
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2-2-2-2-2"><img class="pw-image-style" src="https://files.peachworlds.com/website/b6ce1a4e-417e-4865-af33-3c85385cb682/volume-base-blk.svg" loading="lazy" id="irsa5v-3-11" />
+                            <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec"
+                                id="ispyh-2-2-2-3-2-2-2-2-2-2-2-2">Advanced VETO engine</p>
+                        </div>
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2-2-2-2-2-2"><img class="pw-image-style" src="https://files.peachworlds.com/website/b6ce1a4e-417e-4865-af33-3c85385cb682/volume-base-blk.svg" loading="lazy" id="irsa5v-3-12" />
+                            <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec"
+                                id="ispyh-2-2-2-3-2-2-2-2-2-2-2-2-2">VitalMeal planner for 4 mo</p>
+                        </div>
+                    </div>
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-2-2-3-2">
+                        <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-2-2-3-2">Contact Sales</p><img class="pw-image-style" src="https://files.peachworlds.com/website/891f2b7b-7938-4621-8e01-2c998deb43f8/arow-white.svg" loading="lazy" id="i9hq34-2-2-3-2" /></div>
+                </div>
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-4-2-2-3-3-2-2-2">
+                    <div class="pw-block-style" id="ipkvji-4-4-2-2-2">
+                        <h3 class="pw-user-text-style-68210bff-519a-4c4d-8aa2-b3b5be3cb987" id="ispyh-2-2-2-2-2-2-3-3-2-2-2">Max</h3>
+                        <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec" id="ispyh-2-2-2-4-4-2-4-2-3-2-3">Best for complete, integrated life management.<br id="i91bg2-2-3-2-3" /></p>
+                    </div>
+                    <div class="pw-block-style" id="il5oxh-3"></div>
+                    <div class="pw-block-style" id="ipkvji-4-3-3-2-2-2">
+                        <h1 class="pw-user-text-style-9711fa5c-ea00-4752-8af0-945c28ef776e" id="ispyh-2-2-2-4-4-2-3-3-2-2">Monthly Credits • Rs.2,499/mo</h1>
+                    </div>
+                    <div class="pw-block-style" id="ipkvji-4-3-3-3-2-5">
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2-5"><img class="pw-image-style" src="https://files.peachworlds.com/website/b6ce1a4e-417e-4865-af33-3c85385cb682/volume-base-blk.svg" loading="lazy" id="irsa5v-3-6" />
+                            <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec"
+                                id="ispyh-2-2-2-3-2-2-2-2-5">Unlimited AI depth</p>
+                        </div>
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2-2-5"><img class="pw-image-style" src="https://files.peachworlds.com/website/b6ce1a4e-417e-4865-af33-3c85385cb682/volume-base-blk.svg" loading="lazy" id="irsa5v-3-7" />
+                            <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec"
+                                id="ispyh-2-2-2-3-2-2-2-2-2-5">All platform features</p>
+                        </div>
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2-2-2-3"><img class="pw-image-style" src="https://files.peachworlds.com/website/b6ce1a4e-417e-4865-af33-3c85385cb682/volume-base-blk.svg" loading="lazy" id="irsa5v-3-8" />
+                            <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec"
+                                id="ispyh-2-2-2-3-2-2-2-2-2-2-4">Priority support</p>
+                        </div>
+                        <div class="pw-block-style" id="ipkvji-4-3-3-3-2-2-2-2-2-4"><img class="pw-image-style" src="https://files.peachworlds.com/website/b6ce1a4e-417e-4865-af33-3c85385cb682/volume-base-blk.svg" loading="lazy" id="irsa5v-3-9" />
+                            <p class="pw-user-text-style-24b64575-cd02-447f-8652-42c6ba02cfec"
+                                id="ispyh-2-2-2-3-2-2-2-2-2-2-2-4">Unlimited VETO logs</p>
+                        </div>
+                    </div>
+                    <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-2-2-3">
+                        <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-2-2-3">Contact Sales</p><img class="pw-image-style" src="https://files.peachworlds.com/website/891f2b7b-7938-4621-8e01-2c998deb43f8/arow-white.svg" loading="lazy" id="i9hq34-2-2-3-2-3" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="pwb-anchor" id="i3owk-2-2-2"></div>
+        <div class="pwb-flex-grid-wrap" id="injpw">
+            <div class="pwb-flex-grid-wrap" id="i1lwz-4">
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-5"></div>
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-5-2">
+                    <h1 class="pw-user-text-style-6ae56f11-b178-4dd1-8bf0-1f16cb6f2a2e" id="ispyh-2-2-3-2">Empower your life with KARIOS.<br id="iiwi0b-2" />Start today.</h1>
+                    <div class="pw-block-style" id="i81y03-4-3">
+                        <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-2-2-2-3-2">
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-2-2-2-3-2">Get KARIOS</p><img class="pw-image-style" src="https://files.peachworlds.com/website/891f2b7b-7938-4621-8e01-2c998deb43f8/arow-white.svg" loading="lazy" id="i9hq34-2-2-3-2-2-2-3-2" /></div>
+                        <div class="pwb-flex-grid-wrap" id="i1lwz-2-2-2-5-3-3">
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-2-6-3-3">Learn More</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pwb-flex-grid-wrap" id="i1lwz-2-5-3">
+                    <div class="pw-block-style" id="igl11n-4">
+                        <div class="pwb-flex-grid-wrap" id="i1lwz-2-3-2-4"><span id="i5gga9-3">KARIOS</span></div>
+                        <p class="pw-user-text-style-3045d4e5-cceb-462e-a2d3-aff6a744df83" id="ispyh-2-3-3-4">hello@karios.ai</p>
+                    </div>
+                    <div class="pw-block-style" id="i3n84f-3">
+                        <div class="pw-block-style" id="igl11n-3-4">
+                            <div class="pwb-flex-grid-wrap" id="i1lwz-2-3-2-2-4">
+                                <p class="pw-user-text-style-3045d4e5-cceb-462e-a2d3-aff6a744df83" id="ispyh-2-3-2-3-3-2-2-2-4">Menu</p>
+                            </div>
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-3-2-5">Platform</p>
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-3-2-2-5">Concepts</p>
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-3-2-2-2-5">Benefits</p>
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-3-2-2-2-3-3">Pricing</p>
+                        </div>
+                        <div class="pw-block-style" id="igl11n-3-2-3">
+                            <div class="pwb-flex-grid-wrap" id="i1lwz-2-3-2-2-2-3">
+                                <p class="pw-user-text-style-3045d4e5-cceb-462e-a2d3-aff6a744df83" id="ispyh-2-3-2-3-3-2-2-2-2-3">Connect</p>
+                            </div>
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-3-2-3-3">Instagram</p>
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-3-2-2-3-3">LinkedIn</p>
+                            <p class="pw-user-text-style-db4943d4-453d-474d-b88a-07d9ad351c62" id="ispyh-2-3-3-2-2-2-2-3">X</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pwb-anchor" id="i3owk-2-2-2-2"></div>
+    </div>
+
+    <!-- Waterfall optimization -->
+    <script type="text/javascript">
+        window._pwPreviewResourceUrls = [];
+        (function waterfallOptimizationScript() {
+            window._pwPreviewResourceUrls = window._pwPreviewResourceUrls || [];
+            if (!window._pwLoadFileRequestsCache) window._pwLoadFileRequestsCache = new Map;
+            if (!window._pwLoadFileResolveFnCache) window._pwLoadFileResolveFnCache = new Map;
+            window._pwSetFileCache = (fileUrl, blob) => {
+                if (!window._pwLoadFileResolveFnCache) throw new Error(`Variable "_pwLoadFileResolveFnCache" is undefined.`);
+                const blobUrl = (window.URL || window.webkitURL).createObjectURL(blob);
+                const resolveFn = window._pwLoadFileResolveFnCache.get(fileUrl);
+                if (!resolveFn) throw new Error(`Resolve function for file "${fileUrl}" not found.`);
+                resolveFn(blobUrl)
+            };
+            window._pwWaitForExplicitFileResolve = fileUrl => {
+                if (!window._pwLoadFileResolveFnCache) throw new Error(`Variable "_pwLoadFileResolveFnCache" is undefined.`);
+                if (!window._pwLoadFileRequestsCache) throw new Error(`Variable "_pwLoadFileRequestsCache" is undefined.`);
+                if (window._pwLoadFileResolveFnCache.has(fileUrl) && window._pwLoadFileRequestsCache.has(fileUrl)) return;
+                let resolveFn = void 0;
+                const explicitWaitPromise = new Promise(resolve => {
+                    resolveFn = resolve
+                });
+                window._pwLoadFileResolveFnCache.set(fileUrl, resolveFn);
+                window._pwLoadFileRequestsCache.set(fileUrl, explicitWaitPromise)
+            };
+            window._pwLoadFileFromCacheHelper = async fileUrl => {
+                if (!fileUrl) return void 0;
+                try {
+                    const response = await fetch(fileUrl);
+                    if (!response.ok) return void 0;
+                    const blob = await response.blob();
+                    const blobUrl = (window.URL || window.webkitURL).createObjectURL(blob);
+                    return blobUrl
+                } catch (error) {
+                    return void 0
+                }
+            };
+            window._pwLoadFileFromCache = async fileUrl => {
+                if (!fileUrl) return void 0;
+                if (!window._pwLoadFileRequestsCache) throw new Error(`Variable "_pwLoadFileRequestsCache" is undefined.`);
+                let requestPromise = window._pwLoadFileRequestsCache.get(fileUrl);
+                if (!requestPromise) {
+                    if (!window._pwLoadFileFromCacheHelper) throw new Error(`Function "_pwLoadFileFromCacheHelper" is undefined.`);
+                    requestPromise = window._pwLoadFileFromCacheHelper(fileUrl);
+                    window._pwLoadFileRequestsCache.set(fileUrl, requestPromise)
+                }
+                return await requestPromise
+            };
+            for (const explicitResourceUrl of window._pwPreviewResourceUrls) window._pwWaitForExplicitFileResolve(explicitResourceUrl)
+        })();
+    </script>
+
+    <script type="text/javascript">
+        window._pwExecLoadingPageJavascript = () => {
+
+        };
+        window._pwExecLoadingPageJavascript();
+    </script>
+
+
+
+</body>
+
+</html>
