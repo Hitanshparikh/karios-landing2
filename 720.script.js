@@ -83,7 +83,7 @@
                     let o = n(t);
                     for (; t !== r.SN.Desktop && void 0 === o;) t === r.SN.Mobile ? t = r.SN.Tablet : t === r.SN.Tablet && (t = r.SN.Desktop), o = n(t);
                     if (!o || "None" === o) return null;
-                    const i = yield u(`${a.lx.SceneState}/${o}.json`, "application/json", window._pwInitialPath || "/");
+                    const i = yield u(`${a.lx.SceneState}/${o}.json`, "application/json");
                     return yield i.json()
                 })),
                 f = e => l(void 0, void 0, void 0, (function*() {
@@ -107,11 +107,11 @@
                     return yield t.text()
                 })),
                 g = () => l(void 0, void 0, void 0, (function*() {
-                    const e = yield u(a.lx.ErrorPage, "text/html", window._pwInitialPath || "/");
+                    const e = yield u(a.lx.ErrorPage, "text/html");
                     return yield e.text()
                 })),
                 v = () => l(void 0, void 0, void 0, (function*() {
-                    const e = yield u(a.lx.ErrorPageStyles, "text/css", window._pwInitialPath || "/");
+                    const e = yield u(a.lx.ErrorPageStyles, "text/css");
                     return yield e.text()
                 })),
                 y = () => l(void 0, void 0, void 0, (function*() {
@@ -3256,9 +3256,9 @@
                             n = new P.Y,
                             o = new T.H,
                             i = new R,
-                            r = qo || "srcdoc" === window.location.pathname ? "/static/" : "",
-                            c = (new E.Z).setDecoderPath(`${r}draco/`),
-                            l = (new C.p).setTranscoderPath(`${r}basis/`);
+                            r = "https://loving-4ampgprc.peachworlds.com/draco/",
+                            c = (new E.Z).setDecoderPath(r),
+                            l = (new C.p).setTranscoderPath("https://loving-4ampgprc.peachworlds.com/basis/");
                         l.detectSupport(e);
                         const u = (new O.B).setCrossOrigin("anonymous").setDRACOLoader(c).setKTX2Loader(l).setMeshoptDecoder(k.f),
                             d = new M.L,

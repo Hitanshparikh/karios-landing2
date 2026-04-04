@@ -744,7 +744,7 @@
             }
 
             function b(t, e) {
-                return (0, m.Yq)(t) ? v(t.allOf, e) : (0, m.my)(t) ? y(t.anyOf, e) : (0, m.PN)(t) ? (n = t.items ?? [], (r = e) in n ? n[r] : "[number]" === r ? (0, l.f)(n) : (0, a.p)()) : (0, m.QS)(t) ? function(t, e) {
+                return (0, m.Yq)(t) ? v(t.allOf, e) : (0, m.my)(t) ? y(t.anyOf, e) : (0, m.PN)(t) ? (n = t.items ? ? [], (r = e) in n ? n[r] : "[number]" === r ? (0, l.f)(n) : (0, a.p)()) : (0, m.QS)(t) ? function(t, e) {
                     return "[number]" === e ? t : (0, a.p)()
                 }(t.items, e) : (0, m.av)(t) ? function(t, e) {
                     return e in t ? t[e] : (0, a.p)()
@@ -851,7 +851,7 @@
                 }(t.allOf) : (0, i.my)(t) ? function(t) {
                     const e = o(t);
                     return (0, r.vC)(e)
-                }(t.anyOf) : (0, i.PN)(t) ? (t.items ?? []).map(((t, e) => e.toString())) : (0, i.QS)(t) ? (t.items, ["[number]"]) : (0, i.av)(t) ? (n = t.properties, globalThis.Object.getOwnPropertyNames(n)) : (0, i.cZ)(t) ? (e = t.patternProperties, s ? globalThis.Object.getOwnPropertyNames(e).map((t => "^" === t[0] && "$" === t[t.length - 1] ? t.slice(1, t.length - 1) : t)) : []) : [];
+                }(t.anyOf) : (0, i.PN)(t) ? (t.items ? ? []).map(((t, e) => e.toString())) : (0, i.QS)(t) ? (t.items, ["[number]"]) : (0, i.av)(t) ? (n = t.properties, globalThis.Object.getOwnPropertyNames(n)) : (0, i.cZ)(t) ? (e = t.patternProperties, s ? globalThis.Object.getOwnPropertyNames(e).map((t => "^" === t[0] && "$" === t[t.length - 1] ? t.slice(1, t.length - 1) : t)) : []) : [];
                 var e, n
             }
             let s = !1;
@@ -920,7 +920,7 @@
             }
 
             function u(t, e) {
-                const n = e ?? !0;
+                const n = e ? ? !0;
                 return (0, l.ZD)(t) ? function(t, e) {
                     const n = s(t, e);
                     return (0, a.r)(n)
@@ -1450,7 +1450,7 @@
             }
 
             function B(t, e) {
-                const n = e ?? !0;
+                const n = e ? ? !0;
                 return (0, d.ZD)(t) ? function(t, e) {
                     const n = F(t, e);
                     return (0, U.r)(n)
@@ -2140,7 +2140,7 @@
                 };
                 return (0, d.X$)(e) ? (0, Xt.X)(Ne(t, (0, k.b)(e, [o.tJ]))) : (0, d.TC)(e) ? B(Ne(t, (0, k.b)(e, [o.hi]))) : (0, d.ZD)(e) ? Ie(t, e.properties) : (0, d.zZ)(e) ? function(t, e) {
                     return Ie(t, Le(t, e))
-                }(t, e.keys) : (0, d.ZV)(e) ? X(De(t, e.parameters), Ne(t, e.returns), n) : (0, d.hg)(e) ? R(De(t, e.parameters), Ne(t, e.returns), n) : (0, d.H1)(e) ? c(Ne(t, e.items), n) : (0, d.jo)(e) ? Ee(Ne(t, e.items), n) : (0, d.Yq)(e) ? f(De(t, e.allOf), n) : (0, d.my)(e) ? g(De(t, e.anyOf), n) : (0, d.PN)(e) ? N(De(t, e.items ?? []), n) : (0, d.av)(e) ? M(function(t, e) {
+                }(t, e.keys) : (0, d.ZV)(e) ? X(De(t, e.parameters), Ne(t, e.returns), n) : (0, d.hg)(e) ? R(De(t, e.parameters), Ne(t, e.returns), n) : (0, d.H1)(e) ? c(Ne(t, e.items), n) : (0, d.jo)(e) ? Ee(Ne(t, e.items), n) : (0, d.Yq)(e) ? f(De(t, e.allOf), n) : (0, d.my)(e) ? g(De(t, e.anyOf), n) : (0, d.PN)(e) ? N(De(t, e.items ? ? []), n) : (0, d.av)(e) ? M(function(t, e) {
                     const n = {};
                     for (const r of globalThis.Object.getOwnPropertyNames(e)) n[r] = Ne(t, e[r]);
                     return n
@@ -2478,7 +2478,7 @@
 
             function gn(t) {
                 return function(t) {
-                    return (0, d.Yq)(t) ? t.allOf : (0, d.my)(t) ? t.anyOf : (0, d.PN)(t) ? t.items ?? [] : []
+                    return (0, d.Yq)(t) ? t.allOf : (0, d.my)(t) ? t.anyOf : (0, d.PN)(t) ? t.items ? ? [] : []
                 }(t)
             }
 
@@ -2526,7 +2526,7 @@
 
             function xn(t = {}) {
                 return (0, i.v)({
-                    [o.b8]: t[o.b8] ?? "Unsafe"
+                    [o.b8]: t[o.b8] ? ? "Unsafe"
                 }, t)
             }
 
@@ -47527,7 +47527,7 @@
             };
 
             function Be(t) {
-                return t < .04045 ?.0773993808 * t : Math.pow(.9478672986 * t + .0521327014, 2.4)
+                return t < .04045 ? .0773993808 * t : Math.pow(.9478672986 * t + .0521327014, 2.4)
             }
 
             function Ve(t) {

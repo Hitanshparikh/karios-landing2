@@ -628,7 +628,7 @@
                 },
                 Lt = function e(t, n, r) {
                     var i = n >= 1 ? n : 1,
-                        s = (r || (t ?.3 : .45)) / (n < 1 ? n : 1),
+                        s = (r || (t ? .3 : .45)) / (n < 1 ? n : 1),
                         a = s / y * (Math.asin(1 / i) || 0),
                         o = function(e) {
                             return 1 === e ? 1 : i * Math.pow(2, -10 * e) * D((e - a) * s) + 1
@@ -3538,7 +3538,7 @@
             }
 
             function U(e, t, n, r) {
-                return "number" == typeof t ? t : t.startsWith("-") || t.startsWith("+") ? Math.max(0, e + parseFloat(t)) : "<" === t ? n : t.startsWith("<") ? Math.max(0, n + parseFloat(t.slice(1))) : r.get(t) ?? e
+                return "number" == typeof t ? t : t.startsWith("-") || t.startsWith("+") ? Math.max(0, e + parseFloat(t)) : "<" === t ? n : t.startsWith("<") ? Math.max(0, n + parseFloat(t.slice(1))) : r.get(t) ? ? e
             }
             var G = n(1083);
 
@@ -3691,7 +3691,7 @@
                 ve = he(.33, 1.53, .69, .99),
                 be = me(ve),
                 Be = pe(be),
-                Ie = e => (e *= 2) < 1 ?.5 * be(e) : .5 * (2 - Math.pow(2, -10 * (e - 1))),
+                Ie = e => (e *= 2) < 1 ? .5 * be(e) : .5 * (2 - Math.pow(2, -10 * (e - 1))),
                 Ce = e => 1 - Math.sin(Math.acos(e)),
                 Ee = me(Ce),
                 ye = pe(Ce),
@@ -3789,7 +3789,7 @@
                         const {
                             motionValue: e
                         } = this.options;
-                        e && e.updatedAt !== re.now() && this.tick(re.now()), this.isStopped = !0, "idle" !== this.state && (this.teardown(), this.options.onStop ?.())
+                        e && e.updatedAt !== re.now() && this.tick(re.now()), this.isStopped = !0, "idle" !== this.state && (this.teardown(), this.options.onStop ? .())
                     }, se.mainThread++, this.options = e, this.initAnimation(), this.play(), !1 === e.autoplay && this.pause()
                 }
                 initAnimation() {
@@ -3886,7 +3886,7 @@
                     return c(this.currentTime)
                 }
                 set time(e) {
-                    e = A(e), this.currentTime = e, null === this.startTime || null !== this.holdTime || 0 === this.playbackSpeed ? this.holdTime = e : this.driver && (this.startTime = this.driver.now() - e / this.playbackSpeed), this.driver ?.start(!1)
+                    e = A(e), this.currentTime = e, null === this.startTime || null !== this.holdTime || 0 === this.playbackSpeed ? this.holdTime = e : this.driver && (this.startTime = this.driver.now() - e / this.playbackSpeed), this.driver ? .start(!1)
                 }
                 get speed() {
                     return this.playbackSpeed
@@ -3902,9 +3902,9 @@
                         driver: e = oe,
                         startTime: t
                     } = this.options;
-                    this.driver || (this.driver = e((e => this.tick(e)))), this.options.onPlay ?.();
+                    this.driver || (this.driver = e((e => this.tick(e)))), this.options.onPlay ? .();
                     const n = this.driver.now();
-                    "finished" === this.state ? (this.updateFinished(), this.startTime = n) : null !== this.holdTime ? this.startTime = n - this.holdTime : this.startTime || (this.startTime = t ?? n), "finished" === this.state && this.speed < 0 && (this.startTime += this.calculatedDuration), this.holdTime = null, this.state = "running", this.driver.start()
+                    "finished" === this.state ? (this.updateFinished(), this.startTime = n) : null !== this.holdTime ? this.startTime = n - this.holdTime : this.startTime || (this.startTime = t ? ? n), "finished" === this.state && this.speed < 0 && (this.startTime += this.calculatedDuration), this.holdTime = null, this.state = "running", this.driver.start()
                 }
                 pause() {
                     this.state = "paused", this.updateTime(re.now()), this.holdTime = this.currentTime
@@ -3913,10 +3913,10 @@
                     "running" !== this.state && this.play(), this.state = "finished", this.holdTime = null
                 }
                 finish() {
-                    this.notifyFinished(), this.teardown(), this.state = "finished", this.options.onComplete ?.()
+                    this.notifyFinished(), this.teardown(), this.state = "finished", this.options.onComplete ? .()
                 }
                 cancel() {
-                    this.holdTime = null, this.startTime = 0, this.tick(0), this.teardown(), this.options.onCancel ?.()
+                    this.holdTime = null, this.startTime = 0, this.tick(0), this.teardown(), this.options.onCancel ? .()
                 }
                 teardown() {
                     this.state = "idle", this.stopDriver(), this.startTime = this.holdTime = null, se.mainThread--
@@ -3928,7 +3928,7 @@
                     return this.startTime = 0, this.tick(e, !0)
                 }
                 attachTimeline(e) {
-                    return this.options.allowFlatten && (this.options.type = "keyframes", this.options.ease = "linear", this.initAnimation()), this.driver ?.stop(), e.observe(this)
+                    return this.options.allowFlatten && (this.options.type = "keyframes", this.options.ease = "linear", this.initAnimation()), this.driver ? .stop(), e.observe(this)
                 }
             }
             const Le = e => 180 * e / Math.PI,
@@ -4061,7 +4061,7 @@
                         e.render();
                         const t = n.get(e);
                         t && t.forEach((([t, n]) => {
-                            e.getValue(t) ?.set(n)
+                            e.getValue(t) ? .set(n)
                         }))
                     })), e.forEach((e => e.measureEndState())), e.forEach((e => {
                         void 0 !== e.suspendedScrollY && window.scrollTo(0, e.suspendedScrollY)
@@ -4090,7 +4090,7 @@
                         motionValue: r
                     } = this;
                     if (null === e[0]) {
-                        const i = r ?.get(),
+                        const i = r ? .get(),
                             s = e[e.length - 1];
                         if (void 0 !== i) e[0] = i;
                         else if (n && t) {
@@ -4099,7 +4099,7 @@
                         }
                         void 0 === e[0] && (e[0] = s), r && void 0 === i && r.set(e[0])
                     }! function(e) {
-                        for (let t = 1; t < e.length; t++) e[t] ?? (e[t] = e[t - 1])
+                        for (let t = 1; t < e.length; t++) e[t] ? ? (e[t] = e[t - 1])
                     }(e)
                 }
                 setFinalKeyframe() {}
@@ -4127,7 +4127,7 @@
 
             function ht(e, t) {
                 const n = At(e);
-                return () => ut[t] ?? n()
+                return () => ut[t] ? ? n()
             }
             const dt = ht((() => {
                     try {
@@ -4203,7 +4203,7 @@
                         type: e,
                         ...t
                     }) {
-                        return T(e) && dt() ? e.applyToOptions(t) : (t.duration ?? (t.duration = 300), t.ease ?? (t.ease = "easeOut"), t)
+                        return T(e) && dt() ? e.applyToOptions(t) : (t.duration ? ? (t.duration = 300), t.ease ? ? (t.ease = "easeOut"), t)
                     }(e);
                     this.animation = mt(t, n, r, A, i), !1 === A.autoplay && this.animation.pause(), this.animation.onfinish = () => {
                         if (this.finishedTime = this.time, !i) {
@@ -4212,7 +4212,7 @@
                                 (e => e.startsWith("--"))(t) ? e.style.setProperty(t, n): e.style[t] = n
                             }(t, n, e), this.animation.cancel()
                         }
-                        o ?.(), this.notifyFinished()
+                        o ? .(), this.notifyFinished()
                     }
                 }
                 play() {
@@ -4222,7 +4222,7 @@
                     this.animation.pause()
                 }
                 complete() {
-                    this.animation.finish ?.()
+                    this.animation.finish ? .()
                 }
                 cancel() {
                     try {
@@ -4238,10 +4238,10 @@
                     "idle" !== e && "finished" !== e && (this.updateMotionValue ? this.updateMotionValue() : this.commitStyles(), this.isPseudoElement || this.cancel())
                 }
                 commitStyles() {
-                    this.isPseudoElement || this.animation.commitStyles ?.()
+                    this.isPseudoElement || this.animation.commitStyles ? .()
                 }
                 get duration() {
-                    const e = this.animation.effect ?.getComputedTiming ?.().duration || 0;
+                    const e = this.animation.effect ? .getComputedTiming ? .().duration || 0;
                     return c(Number(e))
                 }
                 get iterationDuration() {
@@ -4266,7 +4266,7 @@
                     return null !== this.finishedTime ? "finished" : this.animation.playState
                 }
                 get startTime() {
-                    return this.manualStartTime ?? Number(this.animation.startTime)
+                    return this.manualStartTime ? ? Number(this.animation.startTime)
                 }
                 set startTime(e) {
                     this.manualStartTime = this.animation.startTime = e
@@ -4275,7 +4275,7 @@
                     timeline: e,
                     observe: t
                 }) {
-                    return this.allowFlatten && this.animation.effect ?.updateTiming({
+                    return this.allowFlatten && this.animation.effect ? .updateTiming({
                         easing: "linear"
                     }), this.animation.onfinish = null, e && ct() ? (this.animation.timeline = e, $.l) : t(this)
                 }
@@ -4334,7 +4334,7 @@
                     ...l
                 }) {
                     super(), this.stop = () => {
-                        this._animation && (this._animation.stop(), this.stopTimeline ?.()), this.keyframeResolver ?.cancel()
+                        this._animation && (this._animation.stop(), this.stopTimeline ? .()), this.keyframeResolver ? .cancel()
                     }, this.createdAt = re.now();
                     const u = {
                             autoplay: e,
@@ -4348,8 +4348,8 @@
                             element: c,
                             ...l
                         },
-                        h = c ?.KeyframeResolver || ot;
-                    this.keyframeResolver = new h(a, ((e, t, n) => this.onKeyframesResolved(e, t, u, !n)), o, A, c), this.keyframeResolver ?.scheduleResolve()
+                        h = c ? .KeyframeResolver || ot;
+                    this.keyframeResolver = new h(a, ((e, t, n) => this.onKeyframesResolved(e, t, u, !n)), o, A, c), this.keyframeResolver ? .scheduleResolve()
                 }
                 onKeyframesResolved(e, t, n, r) {
                     this.keyframeResolver = void 0;
@@ -4375,7 +4375,7 @@
                                 for (let n = 0; n < e.length; n++)
                                     if (e[n] !== t) return !0
                             }(e) || ("spring" === n || T(n)) && r)
-                        }(e, i, s, a) || (!Z.W.instantAnimations && o || c ?.(_e(e, n, t)), e[0] = e[e.length - 1], yt(n), n.repeat = 0);
+                        }(e, i, s, a) || (!Z.W.instantAnimations && o || c ? .(_e(e, n, t)), e[0] = e[e.length - 1], yt(n), n.repeat = 0);
                     const l = {
                             startTime: r ? this.resolvedAt && this.resolvedAt - this.createdAt > 40 ? this.resolvedAt : this.createdAt : void 0,
                             finalKeyframe: t,
@@ -4390,7 +4390,7 @@
                                 repeatType: i,
                                 damping: s,
                                 type: a
-                            } = e, o = t ?.owner ?.current;
+                            } = e, o = t ? .owner ? .current;
                             if (!(o instanceof HTMLElement)) return !1;
                             const {
                                 onUpdate: A,
@@ -4398,7 +4398,7 @@
                             } = t.owner.getProps();
                             return xt() && n && wt.has(n) && ("transform" !== n || !c) && !A && !r && "mirror" !== i && 0 !== s && "inertia" !== a
                         }(l),
-                        h = l.motionValue ?.owner ?.current,
+                        h = l.motionValue ? .owner ? .current,
                         d = u ? new It({ ...l,
                             element: h
                         }) : new Pe(l);
@@ -4413,7 +4413,7 @@
                     return this.finished.finally(e).then((() => {}))
                 }
                 get animation() {
-                    return this._animation || (this.keyframeResolver ?.resume(), it = !0, at(), st(), it = !1), this._animation
+                    return this._animation || (this.keyframeResolver ? .resume(), it = !0, at(), st(), it = !1), this._animation
                 }
                 get duration() {
                     return this.animation.duration
@@ -4452,12 +4452,12 @@
                     this.animation.complete()
                 }
                 cancel() {
-                    this._animation && this.animation.cancel(), this.keyframeResolver ?.cancel()
+                    this._animation && this.animation.cancel(), this.keyframeResolver ? .cancel()
                 }
             }
 
             function Tt(e, t) {
-                return e ?.[t] ?? e ?.default ?? e
+                return e ? .[t] ? ? e ? .default ? ? e
             }
             const Dt = {
                     type: "spring",
@@ -4569,7 +4569,7 @@
                 constructor(e, t = {}) {
                     this.canTrackVelocity = null, this.events = {}, this.updateAndNotify = e => {
                         const t = re.now();
-                        if (this.updatedAt !== t && this.setPrevFrameValue(), this.prev = this.current, this.setCurrent(e), this.current !== this.prev && (this.events.change ?.notify(this.current), this.dependents))
+                        if (this.updatedAt !== t && this.setPrevFrameValue(), this.prev = this.current, this.setCurrent(e), this.current !== this.prev && (this.events.change ? .notify(this.current), this.dependents))
                             for (const e of this.dependents) e.dirty()
                     }, this.hasAnimated = !1, this.setCurrent(e), this.owner = t.owner
                 }
@@ -4608,7 +4608,7 @@
                     this.updateAndNotify(e), this.prev = e, this.prevUpdatedAt = this.prevFrameValue = void 0, t && this.stop(), this.stopPassiveEffect && this.stopPassiveEffect()
                 }
                 dirty() {
-                    this.events.change ?.notify(this.current)
+                    this.events.change ? .notify(this.current)
                 }
                 addDependent(e) {
                     this.dependents || (this.dependents = new Set), this.dependents.add(e)
@@ -4645,7 +4645,7 @@
                     delete this.animation
                 }
                 destroy() {
-                    this.dependents ?.clear(), this.events.destroy ?.notify(), this.clearListeners(), this.stop(), this.stopPassiveEffect && this.stopPassiveEffect()
+                    this.dependents ? .clear(), this.events.destroy ? .notify(), this.clearListeners(), this.stop(), this.stopPassiveEffect && this.stopPassiveEffect()
                 }
             }
 
@@ -4657,7 +4657,7 @@
 
             function Nt(e) {
                 const t = [{}, {}];
-                return e ?.values.forEach(((e, n) => {
+                return e ? .values.forEach(((e, n) => {
                     t[0][n] = e.get(), t[1][n] = e.getVelocity()
                 })), t
             }
@@ -4739,7 +4739,7 @@
                 const A = [],
                     c = i && e.animationState && e.animationState.getState()[i];
                 for (const t in o) {
-                    const r = e.getValue(t, e.latestValues[t] ?? null),
+                    const r = e.getValue(t, e.latestValues[t] ? ? null),
                         i = o[t];
                     if (void 0 === i || c && Xt(c, t)) continue;
                     const a = {
@@ -5001,7 +5001,7 @@
                     r && r.jump(this.measuredOrigin, !1);
                     const i = n.length - 1,
                         s = n[i];
-                    n[i] = et[t](e.measureViewportBox(), window.getComputedStyle(e.current)), null !== s && void 0 === this.finalKeyframe && (this.finalKeyframe = s), this.removedTransforms ?.length && this.removedTransforms.forEach((([t, n]) => {
+                    n[i] = et[t](e.measureViewportBox(), window.getComputedStyle(e.current)), null !== s && void 0 === this.finalKeyframe && (this.finalKeyframe = s), this.removedTransforms ? .length && this.removedTransforms.forEach((([t, n]) => {
                         e.getValue(t).set(n)
                     })), this.resolveNoneKeyframes()
                 }
@@ -5069,10 +5069,10 @@
                                     t = () => Qn.current = e.matches;
                                 e.addEventListener("change", t), t()
                             } else Qn.current = !1
-                    }(), this.shouldReduceMotion = Qn.current), this.parent ?.addChild(this), this.update(this.props, this.presenceContext)
+                    }(), this.shouldReduceMotion = Qn.current), this.parent ? .addChild(this), this.update(this.props, this.presenceContext)
                 }
                 unmount() {
-                    this.projection && this.projection.unmount(), (0, ee.WG)(this.notifyUpdate), (0, ee.WG)(this.render), this.valueSubscriptions.forEach((e => e())), this.valueSubscriptions.clear(), this.removeFromVariantTree && this.removeFromVariantTree(), this.parent ?.removeChild(this);
+                    this.projection && this.projection.unmount(), (0, ee.WG)(this.notifyUpdate), (0, ee.WG)(this.render), this.valueSubscriptions.forEach((e => e())), this.valueSubscriptions.clear(), this.removeFromVariantTree && this.removeFromVariantTree(), this.parent ? .removeChild(this);
                     for (const e in this.events) this.events[e].clear();
                     for (const e in this.features) {
                         const t = this.features[e];
@@ -5081,7 +5081,7 @@
                     this.current = null
                 }
                 addChild(e) {
-                    this.children.add(e), this.enteringChildren ?? (this.enteringChildren = new Set), this.enteringChildren.add(e)
+                    this.children.add(e), this.enteringChildren ? ? (this.enteringChildren = new Set), this.enteringChildren.add(e)
                 }
                 removeChild(e) {
                     this.children.delete(e), this.enteringChildren && this.enteringChildren.delete(e)
@@ -5207,7 +5207,7 @@
                     }), this.addValue(e, n)), n
                 }
                 readValue(e, t) {
-                    let n = void 0 === this.latestValues[e] && this.current ? this.getBaseTargetFromProps(this.props, e) ?? this.readValueFromInstance(this.current, e, this.options) : this.latestValues[e];
+                    let n = void 0 === this.latestValues[e] && this.current ? this.getBaseTargetFromProps(this.props, e) ? ? this.readValueFromInstance(this.current, e, this.options) : this.latestValues[e];
                     var r;
                     return null != n && ("string" == typeof n && (gn(n) || bn(n)) ? n = parseFloat(n) : (r = n, !xn.find(hn(r)) && Ct.f.test(t) && (n = Bn(e, t))), this.setBaseTarget(e, S(n) ? n.get() : n)), S(n) ? n.get() : n
                 }
@@ -5220,7 +5220,7 @@
                     } = this.props;
                     let n;
                     if ("string" == typeof t || "object" == typeof t) {
-                        const r = Ht(this.props, t, this.presenceContext ?.custom);
+                        const r = Ht(this.props, t, this.presenceContext ? .custom);
                         r && (n = r[e])
                     }
                     if (t && void 0 !== n) return n;
@@ -5338,7 +5338,7 @@
                     attrs: u,
                     style: h
                 } = e;
-                u.transform && (h.transform = u.transform, delete u.transform), (h.transform || u.transformOrigin) && (h.transformOrigin = u.transformOrigin ?? "50% 50%", delete u.transformOrigin), h.transform && (h.transformBox = l ?.transformBox ?? "fill-box", delete u.transformBox);
+                u.transform && (h.transform = u.transform, delete u.transform), (h.transform || u.transformOrigin) && (h.transformOrigin = u.transformOrigin ? ? "50% 50%", delete u.transformOrigin), h.transform && (h.transformBox = l ? .transformBox ? ? "fill-box", delete u.transformBox);
                 for (const e of Hn) void 0 !== u[e] && (h[e] = u[e], delete u[e]);
                 void 0 !== t && (u.x = t), void 0 !== n && (u.y = n), void 0 !== r && (u.scale = r), void 0 !== i && function(e, t, n = 1, r = 0, i = !0) {
                     e.pathLength = 1;
@@ -5358,7 +5358,7 @@
                 const s = e.style;
                 let a;
                 for (a in t) s[a] = t[a];
-                for (a in i ?.applyProjectionStyles(s, r), n) s.setProperty(a, n[a])
+                for (a in i ? .applyProjectionStyles(s, r), n) s.setProperty(a, n[a])
             }
 
             function Yn(e, t) {
@@ -5411,10 +5411,10 @@
 
             function Jn(e, t, n) {
                 const r = e.style,
-                    i = t ?.style,
+                    i = t ? .style,
                     s = {};
                 if (!r) return s;
-                for (const t in r)(S(r[t]) || i && S(i[t]) || Xn(t, e) || void 0 !== n ?.getValue(t) ?.liveStyle) && (s[t] = r[t]);
+                for (const t in r)(S(r[t]) || i && S(i[t]) || Xn(t, e) || void 0 !== n ? .getValue(t) ? .liveStyle) && (s[t] = r[t]);
                 return s
             }
             class Zn extends kn {
@@ -5493,7 +5493,7 @@
                     super(...arguments), this.type = "html", this.renderInstance = Vn
                 }
                 readValueFromInstance(e, t) {
-                    if (Ke.has(t)) return this.projection ?.isProjecting ? je(t) : ((e, t) => {
+                    if (Ke.has(t)) return this.projection ? .isProjecting ? je(t) : ((e, t) => {
                         const {
                             transform: n = "none"
                         } = getComputedStyle(e);
@@ -5665,7 +5665,7 @@
                                 } = n;
                                 const y = "function" == typeof l ? l(a, o) : l,
                                     w = c.length,
-                                    x = T(g) ? g : i ?.[g || "keyframes"];
+                                    x = T(g) ? g : i ? .[g || "keyframes"];
                                 if (w <= 2 && x) {
                                     let e = 100;
                                     if (2 === w && J(c)) {
@@ -5678,7 +5678,7 @@
                                     const n = d(t, e, x);
                                     C = n.ease, E = n.duration
                                 }
-                                E ?? (E = s);
+                                E ? ? (E = s);
                                 const S = h + y;
                                 1 === u.length && 0 === u[0] && (u[1] = 1);
                                 const _ = u.length - c.length;
@@ -5782,7 +5782,7 @@
                 target: e,
                 borderBoxSize: t
             }) {
-                a.get(e) ?.forEach((n => {
+                a.get(e) ? .forEach((n => {
                     n(e, {
                         get width() {
                             return c(e, t)
@@ -5803,11 +5803,11 @@
                 const n = (0, s.K)(e);
                 return n.forEach((e => {
                     let n = a.get(e);
-                    n || (n = new Set, a.set(e, n)), n.add(t), o ?.observe(e)
+                    n || (n = new Set, a.set(e, n)), n.add(t), o ? .observe(e)
                 })), () => {
                     n.forEach((e => {
                         const n = a.get(e);
-                        n ?.delete(t), n ?.size || o ?.unobserve(e)
+                        n ? .delete(t), n ? .size || o ? .unobserve(e)
                     }))
                 }
             }
@@ -6045,7 +6045,7 @@
                     if (!e) return;
                     if (e.delete(a), e.size) return;
                     const n = L.get(t);
-                    L.delete(t), n && (G(t).removeEventListener("scroll", n), O.get(t) ?.(), window.removeEventListener("resize", n))
+                    L.delete(t), n && (G(t).removeEventListener("scroll", n), O.get(t) ? .(), window.removeEventListener("resize", n))
                 }
             }
         },
@@ -6117,7 +6117,7 @@
                             return (1 - n) * e + n * t
                         }(e, t, 1 - Math.exp(-n * r))
                     }(this.value, this.to, 60 * this.lerp, e), Math.round(this.value) === this.to && (this.value = this.to, t = !0)) : (this.value = this.to, t = !0);
-                    t && this.stop(), this.onUpdate ?.(this.value, t)
+                    t && this.stop(), this.onUpdate ? .(this.value, t)
                 }
                 stop() {
                     this.isRunning = !1
@@ -6129,7 +6129,7 @@
                     onStart: s,
                     onUpdate: a
                 }) {
-                    this.from = this.value = e, this.to = t, this.lerp = n, this.duration = r, this.easing = i, this.currentTime = 0, this.isRunning = !0, s ?.(), this.onUpdate = a
+                    this.from = this.value = e, this.to = t, this.lerp = n, this.duration = r, this.easing = i, this.currentTime = 0, this.isRunning = !0, s ? .(), this.onUpdate = a
                 }
             };
             var s = class {
@@ -6155,7 +6155,7 @@
                     wrapperResizeObserver;
                     contentResizeObserver;
                     destroy() {
-                        this.wrapperResizeObserver ?.disconnect(), this.contentResizeObserver ?.disconnect(), this.wrapper === window && this.debouncedResize && window.removeEventListener("resize", this.debouncedResize, !1)
+                        this.wrapperResizeObserver ? .disconnect(), this.contentResizeObserver ? .disconnect(), this.wrapper === window && this.debouncedResize && window.removeEventListener("resize", this.debouncedResize, !1)
                     }
                     resize = () => {
                         this.onWrapperResize(), this.onContentResize()
@@ -6177,15 +6177,15 @@
                     events = {};
                     emit(e, ...t) {
                         let n = this.events[e] || [];
-                        for (let e = 0, r = n.length; e < r; e++) n[e] ?.(...t)
+                        for (let e = 0, r = n.length; e < r; e++) n[e] ? .(...t)
                     }
                     on(e, t) {
-                        return this.events[e] ?.push(t) || (this.events[e] = [t]), () => {
-                            this.events[e] = this.events[e] ?.filter((e => t !== e))
+                        return this.events[e] ? .push(t) || (this.events[e] = [t]), () => {
+                            this.events[e] = this.events[e] ? .filter((e => t !== e))
                         }
                     }
                     off(e, t) {
-                        this.events[e] = this.events[e] ?.filter((e => t !== e))
+                        this.events[e] = this.events[e] ? .filter((e => t !== e))
                     }
                     destroy() {
                         this.events = {}
@@ -6405,7 +6405,7 @@
                     onClick = e => {
                         const t = e.composedPath().filter((e => e instanceof HTMLAnchorElement && e.getAttribute("href")));
                         if (this.options.anchors) {
-                            const e = t.find((e => e.getAttribute("href") ?.includes("#")));
+                            const e = t.find((e => e.getAttribute("href") ? .includes("#")));
                             if (e) {
                                 const t = e.getAttribute("href");
                                 if (t) {
@@ -6445,7 +6445,7 @@
                         let A = r.composedPath();
                         A = A.slice(0, A.indexOf(this.rootElement));
                         const c = this.options.prevent;
-                        if (A.find((e => e instanceof HTMLElement && ("function" == typeof c && c ?.(e) || e.hasAttribute ?.("data-lenis-prevent") || i && e.hasAttribute ?.("data-lenis-prevent-touch") || s && e.hasAttribute ?.("data-lenis-prevent-wheel") || this.options.allowNestedScroll && this.checkNestedScroll(e, {
+                        if (A.find((e => e instanceof HTMLElement && ("function" == typeof c && c ? .(e) || e.hasAttribute ? .("data-lenis-prevent") || i && e.hasAttribute ? .("data-lenis-prevent-touch") || s && e.hasAttribute ? .("data-lenis-prevent-wheel") || this.options.allowNestedScroll && this.checkNestedScroll(e, {
                                 deltaX: t,
                                 deltaY: n
                             }))))) return;
@@ -6518,7 +6518,7 @@
                             else if ("string" == typeof e && ["bottom", "right", "end"].includes(e)) e = this.limit;
                             else {
                                 let n;
-                                if ("string" == typeof e ? (n = document.querySelector(e), n || ("#top" === e ? e = 0 : console.warn("Lenis: Target not found", e))) : e instanceof HTMLElement && e ?.nodeType && (n = e), n) {
+                                if ("string" == typeof e ? (n = document.querySelector(e), n || ("#top" === e ? e = 0 : console.warn("Lenis: Target not found", e))) : e instanceof HTMLElement && e ? .nodeType && (n = e), n) {
                                     if (this.options.wrapper !== window) {
                                         const e = this.rootElement.getBoundingClientRect();
                                         t -= this.isHorizontal ? e.left : e.top
@@ -6535,8 +6535,8 @@
                                         t > this.limit / 2 ? e -= this.limit : t < -this.limit / 2 && (e += this.limit)
                                     }
                                 } else e = r(0, e, this.limit);
-                                if (e === this.targetScroll) return c ?.(this), void u ?.(this);
-                                if (this.userData = d ?? {}, n) return this.animatedScroll = this.targetScroll = e, this.setScroll(this.scroll), this.reset(), this.preventNextNativeScrollEvent(), this.emit(), u ?.(this), this.userData = {}, void requestAnimationFrame((() => {
+                                if (e === this.targetScroll) return c ? .(this), void u ? .(this);
+                                if (this.userData = d ? ? {}, n) return this.animatedScroll = this.targetScroll = e, this.setScroll(this.scroll), this.reset(), this.preventNextNativeScrollEvent(), this.emit(), u ? .(this), this.userData = {}, void requestAnimationFrame((() => {
                                     this.dispatchScrollendEvent()
                                 }));
                                 s || (this.targetScroll = e), "number" == typeof o && "function" != typeof A ? A = l : "function" == typeof A && "number" != typeof o && (o = 1), this.animate.fromTo(this.animatedScroll, e, {
@@ -6544,10 +6544,10 @@
                                     easing: A,
                                     lerp: a,
                                     onStart: () => {
-                                        i && (this.isLocked = !0), this.isScrolling = "smooth", c ?.(this)
+                                        i && (this.isLocked = !0), this.isScrolling = "smooth", c ? .(this)
                                     },
                                     onUpdate: (e, t) => {
-                                        this.isScrolling = "smooth", this.lastVelocity = this.velocity, this.velocity = e - this.animatedScroll, this.direction = Math.sign(this.velocity), this.animatedScroll = e, this.setScroll(this.scroll), s && (this.targetScroll = e), t || this.emit(), t && (this.reset(), this.emit(), u ?.(this), this.userData = {}, requestAnimationFrame((() => {
+                                        this.isScrolling = "smooth", this.lastVelocity = this.velocity, this.velocity = e - this.animatedScroll, this.direction = Math.sign(this.velocity), this.animatedScroll = e, this.setScroll(this.scroll), s && (this.targetScroll = e), t || this.emit(), t && (this.reset(), this.emit(), u ? .(this), this.userData = {}, requestAnimationFrame((() => {
                                             this.dispatchScrollendEvent()
                                         })), this.preventNextNativeScrollEvent())
                                     }
@@ -6565,10 +6565,10 @@
                         deltaY: n
                     }) {
                         const r = Date.now(),
-                            i = e._lenis ??= {};
+                            i = e._lenis ? ? = {};
                         let s, a, o, A, c, l, u, h;
                         const d = this.options.gestureOrientation;
-                        if (r - (i.time ?? 0) > 2e3) {
+                        if (r - (i.time ? ? 0) > 2e3) {
                             i.time = Date.now();
                             const t = window.getComputedStyle(e);
                             i.computedStyle = t;
@@ -6607,7 +6607,7 @@
                     }
                     get actualScroll() {
                         const e = this.options.wrapper;
-                        return this.isHorizontal ? e.scrollX ?? e.scrollLeft : e.scrollY ?? e.scrollTop
+                        return this.isHorizontal ? e.scrollX ? ? e.scrollLeft : e.scrollY ? ? e.scrollTop
                     }
                     get scroll() {
                         return this.options.infinite ? (e = this.animatedScroll, t = this.limit, (e % t + t) % t) : this.animatedScroll;
@@ -8159,7 +8159,7 @@
                     for (let i = 0; i < t.values.length; i++) {
                         const s = t.types[i],
                             a = e.indexes[s][r[s]],
-                            o = e.values[a] ?? 0;
+                            o = e.values[a] ? ? 0;
                         n[i] = o, r[s]++
                     }
                     return n
@@ -8186,7 +8186,7 @@
                 if ("string" == typeof e) {
                     let r = document;
                     t && (r = t.current);
-                    const i = n ?.[e] ?? r.querySelectorAll(e);
+                    const i = n ? .[e] ? ? r.querySelectorAll(e);
                     return i ? Array.from(i) : []
                 }
                 return Array.from(e)
@@ -8359,7 +8359,7 @@
             const p = e => "number" == typeof e ? 0 : r.y.test(e) ? r.y.getAnimatableNone(e) : e;
             const m = {
                 test: function(e) {
-                    return isNaN(e) && "string" == typeof e && (e.match(s.S) ?.length || 0) + (e.match(i) ?.length || 0) > 0
+                    return isNaN(e) && "string" == typeof e && (e.match(s.S) ? .length || 0) + (e.match(i) ? .length || 0) > 0
                 },
                 parse: f,
                 createTransformer: g,

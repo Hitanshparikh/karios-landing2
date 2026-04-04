@@ -1062,7 +1062,7 @@
             var i = n(5062),
                 o = n(3162);
             const a = !1,
-                s = "https://files.development.peachworlds.com",
+                s = "https://files.peachworlds.com",
                 r = `${s}/static/textures/water_normal_data_1_v_0_23_1.webp`,
                 l = `${s}/static/textures/water_normal_data_2_v_0_23_1.webp`,
                 c = (o.lV.Group, o.lV.Water, o.lV.Scene, o.lV.Mesh, o.OS.Box, o.OS.Plane, o.OS.Sphere, o.OS.Cylinder, o.OS.Cone, o.OS.Torus, o.lV.Camera, o.Fn.Perspective, o.Fn.Orthographic, o.lV.Light, o.g5.Ambient, o.g5.Directional, o.g5.Point, o.g5.Spot, ["opacity", "color", "aoMapIntensity"]),

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+<defs>
+  <linearGradient id="fv_s" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#F59E0B"/>
+    <stop offset="55%"  stop-color="#EF4444"/>
+    <stop offset="100%" stop-color="#A855F7"/>
+  </linearGradient>
+  <linearGradient id="fv_k1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#FCD34D"/>
+    <stop offset="100%" stop-color="#F87171"/>
+  </linearGradient>
+  <linearGradient id="fv_k2" x1="0%" y1="100%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#F87171"/>
+    <stop offset="100%" stop-color="#C084FC"/>
+  </linearGradient>
+</defs>
+<rect width="48" height="48" rx="10" fill="#07090F"/>
+<polygon points="24,4 40,14 40,34 24,44 8,34 8,14" fill="rgba(245,158,11,0.07)" stroke="url(#fv_s)" stroke-width="1.2"/>
+<circle cx="24" cy="4"  r="1.8" fill="#FCD34D" opacity="0.9"/>
+<circle cx="40" cy="14" r="1.4" fill="#F59E0B" opacity="0.7"/>
+<circle cx="40" cy="34" r="1.4" fill="#EF4444" opacity="0.6"/>
+<circle cx="24" cy="44" r="1.8" fill="#A855F7" opacity="0.8"/>
+<circle cx="8"  cy="34" r="1.4" fill="#8B5CF6" opacity="0.6"/>
+<circle cx="8"  cy="14" r="1.4" fill="#F59E0B" opacity="0.6"/>
+<line x1="15" y1="12" x2="15" y2="36" stroke="url(#fv_k1)" stroke-width="4"   stroke-linecap="round"/>
+<line x1="16" y1="24" x2="34" y2="12" stroke="url(#fv_k1)" stroke-width="3.2" stroke-linecap="round"/>
+<line x1="16" y1="25" x2="34" y2="37" stroke="url(#fv_k2)" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="15.5" cy="24.5" r="3"   fill="#07090F"/>
+<circle cx="15.5" cy="24.5" r="1.4" fill="#F59E0B" opacity="0.9"/>
+</svg>
